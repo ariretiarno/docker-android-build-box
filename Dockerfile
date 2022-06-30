@@ -114,7 +114,7 @@ RUN apt-get update -qq > /dev/null && \
     npm cache clean --force > /dev/null && \
     rm -rf /tmp/* /var/tmp/*
 
-RUN apt install git-man=1:2.17.0-1ubuntu1 git=1:2.17.0-1ubuntu1
+#RUN apt install git-man=1:2.17.0-1ubuntu1 git=1:2.17.0-1ubuntu1
 
 # Install Android SDK
 RUN echo "sdk tools ${ANDROID_SDK_TOOLS_VERSION}" && \
